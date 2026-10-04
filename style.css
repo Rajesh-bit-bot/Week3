@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #1e293b;
+    background: #f8fafc;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+header {
+    background: #0f172a;
+    position: sticky;
+    top: 0;
+}
+
+.navbar {
+    max-width: 1100px;
+    margin: auto;
+    padding: 18px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: #38bdf8;
+}
+
+.hero {
+    min-height: 90vh;
+    padding: 80px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background: linear-gradient(135deg, #0f172a, #1e3a8a);
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+}
+
+.hero h1 span {
+    color: #38bdf8;
+}
+
+.hero h2 {
+    margin: 10px 0 20px;
+    font-weight: normal;
+}
+
+.hero-content {
+    max-width: 750px;
+}
+
+.hero-buttons {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.btn {
+    padding: 12px 22px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.primary-btn {
+    background: #38bdf8;
+    color: #0f172a;
+}
+
+.secondary-btn {
+    border: 2px solid white;
+    color: white;
+}
+
+.section {
+    padding: 70px 20px;
+}
+
+.light-section {
+    background: #e2e8f0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #0f172a;
+}
+
+.about-grid,
+.skills-grid,
+.projects-grid {
+    display: grid;
+    gap: 25px;
+}
+
+.about-grid {
+    grid-template-columns: 2fr 1fr;
+}
+
+.skills-grid,
+.projects-grid {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.about-card,
+.education-card,
+.skill-card,
+.project-card,
+.goal-card,
+.contact-card {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px #00000015;
+}
+
+.about-card h3,
+.education-card h3,
+.skill-card h3,
+.project-card h3 {
+    color: #1e3a8a;
+    margin-bottom: 10px;
+}
+
+.interest-list {
+    list-style: none;
+}
+
+.interest-list li {
+    padding: 7px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.education-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.education-card {
+    border-left: 5px solid #2563eb;
+}
+
+.skill-card,
+.project-card {
+    text-align: center;
+}
+
+.skill-card:hover,
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.tags span {
+    display: inline-block;
+    margin: 10px 3px 0;
+    padding: 5px 10px;
+    background: #dbeafe;
+    color: #1e3a8a;
+    border-radius: 15px;
+    font-size: 13px;
+}
+
+.goal-card,
+.contact-card {
+    max-width: 750px;
+    margin: auto;
+    text-align: center;
+}
+
+.goal-card blockquote {
+    margin-top: 20px;
+    color: #1e3a8a;
+    font-style: italic;
+    font-size: 20px;
+}
+
+.email-link {
+    color: #2563eb;
+    font-weight: bold;
+}
+
+footer {
+    background: #0f172a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsive Design */
+
+@media (max-width: 800px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .skills-grid,
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero h1 {
+        font-size: 2.8rem;
+    }
+}
+
+@media (max-width: 550px) {
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .skills-grid,
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section {
+        padding: 50px 15px;
+    }
+}
