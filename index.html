@@ -1,27 +1,33 @@
-<!DOCTYPE html>
+Image/profile.jpg/profile<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Personal portfolio website of Rajesh Naunyal">
-    <title>Rajesh Naunyal - Personal Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+
+    <title>Rajesh Naunyal | Portfolio</title>
+
+    <!-- External CSS stylesheet -->
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
 
-    <header>
-        <div class="container">
+    <!-- =========================
+         Header and Navigation
+         ========================= -->
+    <header class="site-header">
 
-            <h1>Rajesh Naunyal</h1>
+        <div class="container header-content">
 
-            <p>Bachelor of Information Technology Student | Web Design Learner</p>
+            <div class="logo">
+                <span>RN</span>
+                <h1>Rajesh Naunyal</h1>
+            </div>
 
-            <nav>
+            <nav class="main-navigation">
                 <ul>
+                    <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#education">Education</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
@@ -29,42 +35,47 @@
             </nav>
 
         </div>
+
     </header>
 
+
+    <!-- =========================
+         Hero Section
+         ========================= -->
     <main>
 
-        <section id="about" class="section">
+        <section id="home" class="hero-section">
 
-            <div class="container about-content">
+            <div class="container hero-content">
 
-                <div class="about-text">
+                <div class="hero-text">
 
-                    <h2>About Me</h2>
+                    <p class="small-heading">WELCOME TO MY PORTFOLIO</p>
 
-                    <p>
-                        Hello! My name is Rajesh Naunyal. I am a Bachelor of
-                        Information Technology student at International
-                        American University. I am interested in web design,
-                        software development, and modern technology.
-                    </p>
+                    <h2>
+                        Hello, I'm <span>Rajesh Naunyal</span>
+                    </h2>
 
                     <p>
-                        I am currently learning HTML, CSS, programming,
-                        databases, networking, and software engineering.
-                        I enjoy developing projects that help me improve
-                        my technical and practical skills.
+                        A passionate computer science student interested in
+                        web development, programming, and creating useful
+                        digital solutions.
                     </p>
 
-                    <p>
-                        My goal is to become a skilled technology professional
-                        and continue learning about artificial intelligence,
-                        machine learning, and software development.
-                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="primary-button">
+                            View My Work
+                        </a>
+
+                        <a href="#contact" class="secondary-button">
+                            Contact Me
+                        </a>
+                    </div>
 
                 </div>
 
-                <div class="profile-image">
-                    <img src="./image/profile.jpg/profile.jpeg"
+                <div class="hero-image">
+                    <img src="Image/profile.jpeg"
                          alt="Profile photo of Rajesh Naunyal">
                 </div>
 
@@ -73,41 +84,56 @@
         </section>
 
 
-        <section id="education" class="section education-section">
+        <!-- =========================
+             About Section
+             ========================= -->
+        <section id="about" class="about-section">
 
             <div class="container">
 
-                <h2>My Education</h2>
+                <div class="section-heading">
+                    <p>GET TO KNOW ME</p>
+                    <h2>About Me</h2>
+                </div>
 
-                <div class="education-list">
+                <div class="about-content">
 
-                    <article class="education-item">
+                    <div class="about-card">
 
-                        <h3>Bachelor of Information Technology</h3>
-
-                        <h4>International American University</h4>
-
-                        <p>
-                            Currently pursuing a Bachelor of Information
-                            Technology with a focus on programming, software
-                            development, databases, networking, operating
-                            systems, and modern technologies.
-                        </p>
-
-                    </article>
-
-                    <article class="education-item">
-
-                        <h3>Higher Secondary Education (+2)</h3>
-
-                        <h4>GoldenGate International College</h4>
+                        <h3>Who I Am</h3>
 
                         <p>
-                            Completed higher secondary education before
-                            continuing my studies in Information Technology.
+                            I am Rajesh Naunyal, a computer science student
+                            with an interest in developing websites and
+                            learning modern programming technologies.
                         </p>
 
-                    </article>
+                        <p>
+                            I enjoy working on practical projects that help
+                            me improve my technical knowledge and problem-
+                            solving abilities.
+                        </p>
+
+                    </div>
+
+                    <div class="about-details">
+
+                        <div class="detail-item">
+                            <h3>Education</h3>
+                            <p>Computer Science</p>
+                        </div>
+
+                        <div class="detail-item">
+                            <h3>Interest</h3>
+                            <p>Web Development</p>
+                        </div>
+
+                        <div class="detail-item">
+                            <h3>Focus</h3>
+                            <p>Programming & Technology</p>
+                        </div>
+
+                    </div>
 
                 </div>
 
@@ -116,109 +142,67 @@
         </section>
 
 
-        <section id="skills" class="section skills-section">
+        <!-- =========================
+             Skills Section
+             ========================= -->
+        <section id="skills" class="skills-section">
 
             <div class="container">
 
-                <h2>My Skills</h2>
+                <div class="section-heading light-heading">
+                    <p>WHAT I WORK WITH</p>
+                    <h2>Technical Skills</h2>
+                </div>
 
-                <dl class="skills-list">
+                <div class="skills-container">
 
-                    <div class="skill-item">
-                        <dt>HTML</dt>
-                        <dd>Creating structured and semantic web pages.</dd>
-                    </div>
-
-                    <div class="skill-item">
-                        <dt>CSS</dt>
-                        <dd>Designing responsive and attractive web layouts.</dd>
-                    </div>
-
-                    <div class="skill-item">
-                        <dt>Java</dt>
-                        <dd>Creating basic object-oriented programs.</dd>
-                    </div>
-
-                    <div class="skill-item">
-                        <dt>C / C++</dt>
-                        <dd>Working with programming and data structures.</dd>
-                    </div>
-
-                    <div class="skill-item">
-                        <dt>Database</dt>
-                        <dd>Learning SQL and database management concepts.</dd>
-                    </div>
-
-                    <div class="skill-item">
-                        <dt>Git & GitHub</dt>
-                        <dd>Managing and publishing project source code.</dd>
-                    </div>
-
-                </dl>
-
-            </div>
-
-        </section>
-
-
-        <section id="projects" class="section">
-
-            <div class="container">
-
-                <h2>My Projects</h2>
-
-                <div class="projects-grid">
-
-                    <article class="project-card">
-
-                        <h3>Personal Portfolio Website</h3>
-
+                    <div class="skill">
+                        <div class="skill-number">01</div>
+                        <h3>HTML5</h3>
                         <p>
-                            A personal portfolio website created using
-                            semantic HTML5 and CSS. It contains information
-                            about my education, skills, projects, and contact
-                            details.
+                            Creating structured and semantic web pages.
                         </p>
+                    </div>
 
-                        <a href="https://github.com/" target="_blank">
-                            View Project
-                        </a>
-
-                    </article>
-
-
-                    <article class="project-card">
-
-                        <h3>Grocery Store Inventory & Sales System</h3>
-
+                    <div class="skill">
+                        <div class="skill-number">02</div>
+                        <h3>CSS3</h3>
                         <p>
-                            A software engineering project designed to manage
-                            products, inventory, sales, receipts, low-stock
-                            notifications, and reports.
+                            Designing attractive and responsive interfaces.
                         </p>
+                    </div>
 
-                        <a href="https://github.com/" target="_blank">
-                            View Project
-                        </a>
-
-                    </article>
-
-
-                    <article class="project-card">
-
-                        <h3>Static Website Deployment</h3>
-
+                    <div class="skill">
+                        <div class="skill-number">03</div>
+                        <h3>JavaScript</h3>
                         <p>
-                            A web deployment project focused on creating a
-                            static website using HTML and CSS and making it
-                            publicly accessible through cloud hosting.
+                            Adding interaction and dynamic functionality.
                         </p>
+                    </div>
 
-                        <a href="https://github.com/" target="_blank">
-                            View Project
-                        </a>
+                    <div class="skill">
+                        <div class="skill-number">04</div>
+                        <h3>Java</h3>
+                        <p>
+                            Developing programming and problem-solving skills.
+                        </p>
+                    </div>
 
-                    </article>
+                    <div class="skill">
+                        <div class="skill-number">05</div>
+                        <h3>Python</h3>
+                        <p>
+                            Working with programming concepts and applications.
+                        </p>
+                    </div>
+
+                    <div class="skill">
+                        <div class="skill-number">06</div>
+                        <h3>Git & GitHub</h3>
+                        <p>
+                            Managing source code and project repositories.
+                        </p>
+                    </div>
 
                 </div>
 
@@ -227,88 +211,188 @@
         </section>
 
 
-        <section id="goals" class="section goals-section">
+        <!-- =========================
+             Projects Section
+             ========================= -->
+        <section id="projects" class="projects-section">
 
             <div class="container">
 
-                <h2>My Future Goals</h2>
+                <div class="section-heading">
+                    <p>MY RECENT WORK</p>
+                    <h2>Projects</h2>
+                </div>
 
-                <p>
-                    My goal is to become a skilled technology professional
-                    by improving my programming and software development
-                    skills. I also want to gain practical knowledge in
-                    artificial intelligence and machine learning.
-                </p>
+                <div class="project-list">
 
-                <blockquote>
-                    "Stay hungry, stay foolish."
-                </blockquote>
+                    <article class="project-card">
 
-                <cite>— Steve Jobs</cite>
+                        <div class="project-icon">
+                            01
+                        </div>
 
-            </div>
+                        <div class="project-content">
 
-        </section>
+                            <h3>Personal Portfolio Website</h3>
+
+                            <p>
+                                A responsive personal portfolio website
+                                developed using HTML5 and CSS3 to present
+                                personal information, technical skills,
+                                projects, and contact details.
+                            </p>
+
+                            <span class="project-tag">
+                                HTML & CSS
+                            </span>
+
+                        </div>
+
+                    </article>
 
 
-        <section id="contact" class="section contact-section">
+                    <article class="project-card">
 
-            <div class="container">
+                        <div class="project-icon">
+                            02
+                        </div>
 
-                <h2>Contact Me</h2>
+                        <div class="project-content">
 
-                <div class="contact-info">
+                            <h3>Login and Registration Page</h3>
+
+                            <p>
+                                A user interface project designed to provide
+                                login and registration forms with a clean
+                                and user-friendly web layout.
+                            </p>
+
+                            <span class="project-tag">
+                                Web Design
+                            </span>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="project-card">
+
+                        <div class="project-icon">
+                            03
+                        </div>
+
+                        <div class="project-content">
+
+                            <h3>Responsive Web Interface</h3>
+
+                            <p>
+                                A responsive interface created to practice
+                                flexible layouts and ensure that website
+                                content works effectively on different
+                                screen sizes.
+                            </p>
+
+                            <span class="project-tag">
+                                Responsive Design
+                            </span>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+                <div class="github-section">
 
                     <p>
-                        If you would like to connect with me about technology,
-                        projects, or professional opportunities, feel free
-                        to contact me.
+                        More projects and source code are available on GitHub.
                     </p>
 
-                    <p>
-                        <strong>Email:</strong>
-                        <a href="mailto:rajeshnaunyal12345@gmail.com">
-                            rajeshnaunyal12345@gmail.com
-                        </a>
-                    </p>
+                    <!-- Replace this URL with Rajesh's actual GitHub profile -->
+                    <a href="https://github.com/"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        Visit GitHub
+                    </a>
 
                 </div>
 
-                <form action="#" method="post" class="contact-form">
+            </div>
 
-                    <div class="form-group">
+        </section>
 
-                        <label for="name">Name</label>
 
-                        <input type="text"
-                               id="name"
-                               name="name"
-                               placeholder="Enter your name"
-                               required>
+        <!-- =========================
+             Contact Section
+             ========================= -->
+        <section id="contact" class="contact-section">
+
+            <div class="container contact-layout">
+
+                <div class="contact-information">
+
+                    <p class="small-heading">GET IN TOUCH</p>
+
+                    <h2>Let's Connect</h2>
+
+                    <p>
+                        If you would like to discuss a project, share an idea,
+                        or simply connect, feel free to send me a message.
+                    </p>
+
+                    <div class="contact-item">
+                        <strong>Name</strong>
+                        <span>Rajesh Naunyal</span>
+                    </div>
+
+                    <div class="contact-item">
+                        <strong>Email</strong>
+                        <span>your-email@example.com</span>
+                    </div>
+
+                </div>
+
+
+                <form class="contact-form">
+
+                    <div class="form-row">
+
+                        <div class="form-field">
+                            <label for="name">Name</label>
+
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                placeholder="Enter your name"
+                                required>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="email">Email</label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="Enter your email"
+                                required>
+                        </div>
 
                     </div>
 
-                    <div class="form-group">
 
-                        <label for="email">Email</label>
-
-                        <input type="email"
-                               id="email"
-                               name="email"
-                               placeholder="you@example.com"
-                               required>
-
-                    </div>
-
-                    <div class="form-group">
+                    <div class="form-field">
 
                         <label for="message">Message</label>
 
-                        <textarea id="message"
-                                  name="message"
-                                  rows="5"
-                                  placeholder="Write your message"
-                                  required></textarea>
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="6"
+                            placeholder="Write your message..."
+                            required></textarea>
 
                     </div>
 
@@ -325,7 +409,10 @@
     </main>
 
 
-    <footer>
+    <!-- =========================
+         Footer
+         ========================= -->
+    <footer class="site-footer">
 
         <div class="container">
 
@@ -342,5 +429,4 @@
     </footer>
 
 </body>
-
-</html>
+</html>.jpeg
